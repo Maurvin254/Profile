@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { text: "Graphic Designer and full stack web developer", color: "hsl(73, 94%, 49%)" },
         { text: "UI/UX Designer / Student working on development research", color: "#cc0707" },
         { text: "Follow @dj_chizzie on all social media platforms", color: "#00ff00" },
-        { text: "Student pale Greenlight Training College", color: "hsl(263, 93%, 49%)" }
+        { text: "Student at Moringa School of Software Engineering", color: "hsl(263, 93%, 49%)" }
     ];
     let keywordIndex = 0;
     const keywordSpan = document.querySelector('.keyword');
