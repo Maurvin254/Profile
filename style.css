@@ -1,0 +1,286 @@
+
+* {
+    padding: 15 20;
+    margin: 15 20;
+    background-color: #0c1022; /* Set the background color for the entire page */
+}
+
+body {
+        background-color: #0c1022; /* Set the background color for the entire page */
+    }
+
+.logo {
+    justify-self: unset;
+    color: aqua;
+    font-size: 200%;
+    justify-content: space-between;
+    border-top-width: 100px;
+    animation: glow 1.5s infinite alternate;
+}
+
+.logo span {
+    color: hsl(133, 96%, 48%);
+    justify-content: space-evenly;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.navbar {
+    position: relative;
+    z-index: 2;
+}
+
+.navbar {
+    padding-left: 300px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: transparent;
+    color: #05efef;
+    border: 2px solid hsl(263, 96%, 48%);
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: burlywood;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: hsl(49, 58%, 71%);
+    color: #0c1022;
+    box-shadow: 0 0 20px #05efef;
+}
+
+
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 50px;
+    color: #05efef;
+    font-size: large;
+    font-weight: 800;
+}
+
+.p {
+    color: brown;
+    font-style: italic;
+}
+.text {
+    max-width: 50%;
+    padding: 50px 0;
+}
+
+.img {
+    width: 410px;
+    height: 410px;
+    position: relative;
+    z-index: 2;
+}
+
+.circle {
+    width: 100%;
+    height: 100%;
+    background: #ef05e9;
+    border-radius: 50%;
+    position: absolute;
+    right: 0; /* Aligning to the right */
+    top: 100%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.circle span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(#05efef, #0000ff, rgb(238, 255, 0));
+    filter: blur(20px);
+    animation: circle 7s linear infinite;
+}
+
+@keyframes circle {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: #05efef;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.navbar ul li a:hover {
+    background-color: hsl(258, 96%, 48%);
+    color: #0c1022;
+    box-shadow: 0 0 20px #05efef;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes cursor {
+    from { border-right: 2px solid #05efef; }
+    to { border-right: 2px solid transparent; }
+}
+
+.keyword::after {
+    content: "";
+    animation: cursor 0.10s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px aqua, 0 0 10px aqua, 0 0 15px aqua, 0 0 20px aqua;
+    }
+    to {
+        text-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 30px aqua, 0 0 40px aqua;
+    }
+}
+
+.circle::after {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    background: #0c1022;
+    border-radius: 50%;
+}
+
+.circle .image {
+    position: relative;
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.circle img {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: -45px;
+    transform: translateX(-50%);
+    max-width: 520px;
+    object-fit: cover;
+}
+
+.image-container {
+        width: 150px; /* Adjust the width and height as needed */
+        height: 150px;
+        border-radius: 50%; /* Make it a circle */
+        overflow: hidden; /* Hide overflow content */
+        margin: 0 auto; /* Center the container horizontally */
+        margin-bottom: 20px; /* Add some spacing below the image container */
+        margin-top: -200px;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        display: block; /* Ensure the image takes up the full width of its container */
+    }
+
+       .login-section {
+            padding: 100px 0;
+            color: hsl(197, 89%, 51%);
+            text-align: center;
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin-left: 0px; /* Adjusted margin to place the container at the left */
+            padding-left: 10px;
+            size: 100%;
+        }
+
+        .login-container h2 {
+            margin-bottom: 250px;
+            margin-top: -99px;
+            animation: glow 1.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px hsl(244, 95%, 49%);
+            }
+            50% {
+                text-shadow: 0 0 20px hsl(244, 95%, 49%);
+            }
+            100% {
+                text-shadow: 0 0 10px hsl(244, 95%, 49%);
+            }
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 80%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid hsl(244, 95%, 49%);
+            color: #05efef;
+        }
+
+        .btn {
+            background-color: hwb(244 48% 12%);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: hwb(199 2% 7%);
+        }
